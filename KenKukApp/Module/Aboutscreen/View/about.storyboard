@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--about-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AboutViewController" customModule="KenKukApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkR-Yj-Lkr">
+                                <rect key="frame" x="170.5" y="97" width="73.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="wS5-yi-fGW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-profile" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-Ta-vYh">
+                                <rect key="frame" x="167" y="196" width="80" height="80"/>
+                                <color key="tintColor" name="green2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Qf8-3E-BD5"/>
+                                    <constraint firstAttribute="width" constant="80" id="hFE-Gr-h8Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bayu Aslama Z. A." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehZ-uc-WOy">
+                                <rect key="frame" x="91" y="284" width="232" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3yj-G7-Rsv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bayuaslamaa@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdi-Z1-tKv">
+                                <rect key="frame" x="109" y="344" width="196" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="ADa-se-f8x"/>
+                                    <constraint firstAttribute="height" constant="21" id="XY6-5l-hXY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPy-sP-VUk">
+                                <rect key="frame" x="85" y="372" width="244" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="5EF-bV-q1X"/>
+                                    <constraint firstAttribute="width" constant="244" id="DZa-pZ-Cq4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="https://github.com/bayuaslamaa"/>
+                                <connections>
+                                    <action selector="githubDidTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YpF-Um-QBv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xPy-sP-VUk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1co-ZM-j2r"/>
+                            <constraint firstItem="FiF-Ta-vYh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="75l-X0-8qp"/>
+                            <constraint firstItem="xPy-sP-VUk" firstAttribute="top" secondItem="pdi-Z1-tKv" secondAttribute="bottom" constant="7" id="Iau-x1-1f1"/>
+                            <constraint firstItem="pdi-Z1-tKv" firstAttribute="top" secondItem="ehZ-uc-WOy" secondAttribute="bottom" id="PQp-eG-odX"/>
+                            <constraint firstItem="FiF-Ta-vYh" firstAttribute="top" secondItem="KkR-Yj-Lkr" secondAttribute="bottom" constant="65" id="XYB-eX-5Zo"/>
+                            <constraint firstItem="pdi-Z1-tKv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dr0-Nh-dHo"/>
+                            <constraint firstItem="ehZ-uc-WOy" firstAttribute="top" secondItem="FiF-Ta-vYh" secondAttribute="bottom" constant="8" id="ijo-Xn-O0u"/>
+                            <constraint firstItem="ehZ-uc-WOy" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jgW-kA-SCf"/>
+                            <constraint firstItem="KkR-Yj-Lkr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="mhA-CW-QBc"/>
+                            <constraint firstItem="KkR-Yj-Lkr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="53" id="xPa-AY-oD7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="about" image="ic-profile" id="Rxn-gP-tn4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-profile" width="16" height="20"/>
+        <namedColor name="green2">
+            <color red="0.082352941176470587" green="0.74509803921568629" blue="0.46666666666666667" alpha="0.3884088397026062" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
